@@ -1,0 +1,42 @@
+.liste{
+    list-style-type: none;
+}
+.nav{
+    display: flex;
+    text-decoration: none;
+    
+}
+.wrap{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    
+  
+}
+.home{
+    padding-right: 25px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #ff6060;
+
+}
+.apropo{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #ff6060;
+
+}
