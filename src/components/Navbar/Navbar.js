@@ -7,7 +7,7 @@ import logo from "../../images/logo.png"
 export default function Navbar() {
     return (
         <div className={styles.wrap}>
-            <img src={logo} alt= "logo"/>
+            <img className={styles.logo} src={logo} alt= "logo"/>
     <ul className={styles.liste}>   
      <nav className= {styles.nav}> 
          <li> 
@@ -15,7 +15,7 @@ export default function Navbar() {
         </li>
         
         <li> 
-        <Link className={styles.apropo} to="/APropos">A propos </Link>
+        <Link className={styles.apropo} to="/APropos">A propos</Link>
         </li>
         </nav>
      </ul> 
