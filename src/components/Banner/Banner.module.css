@@ -1,11 +1,12 @@
 .ImgBanner{
 
-position: absolute;
-width: 80%;
-height: 200px;
+height: 223px;
 border-radius: 25px;
 object-fit: cover;
 z-index: 5;
+width: 80%;
+mix-blend-mode: darken;
+filter: brightness(74%);
 
    
 }
@@ -17,5 +18,22 @@ z-index: 5;
     letter-spacing: 0em;
     text-align: left;
     z-index: 8;
-    position:absolute;
+    display: flex;
+    position: absolute;
+    flex-wrap: nowrap;
+    color: #FFFFFF;
+    width: 70%;
+    justify-content: space-around;
+
+}
+.contenerText{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wrap{
+    margin-top: 2%;
+    
 }

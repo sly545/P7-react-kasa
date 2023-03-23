@@ -1,0 +1,25 @@
+.back{
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.logoFooter {
+    width: 122px;
+    padding-top: 50px;
+    
+}
+.copyRight{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    
+}

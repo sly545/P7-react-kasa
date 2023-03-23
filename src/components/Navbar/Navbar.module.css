@@ -11,12 +11,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
     padding-top: 2%;
-    
-  
 }
+
+
 .home{
     padding-right: 25px;
     text-decoration: none;
