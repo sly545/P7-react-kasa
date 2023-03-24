@@ -4,7 +4,8 @@
     align-items: center;
     padding-top: 5%;
     padding-bottom: 5%;
-    margin-bottom: 8%;
+    margin-bottom: 28%;
+
 }
 
 
@@ -28,7 +29,7 @@
 }
 .lien{
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;

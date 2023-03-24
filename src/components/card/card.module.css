@@ -1,0 +1,36 @@
+.wrap{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5%;
+    gap: 50px;
+    background-color:#F6F6F6;
+
+    margin-left: 10%;
+}
+
+.contenerCard{
+   border: 1px;
+   position: relative;
+}
+
+.imgCover{
+   display: flex;
+   height: 340px;
+   width: 340px;
+   left: 0px;
+   top: 0px;
+   border-radius: 10px;
+   object-fit: cover;
+}
+
+.titleCover{
+     color: white;
+     font-size: 18px;
+     position: absolute;
+     bottom: 0;
+     left: 20px;
+     z-index: 1; 
+}
