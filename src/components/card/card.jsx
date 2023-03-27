@@ -1,46 +1,41 @@
-import { useState, useEffect } from "react"; // Import des hooks useState et useEffect de React
-import axios from "axios"; // Import de la bibliothèque axios pour effectuer des appels HTTP
+import { useState, useEffect } from "react";
+import axios from 'axios';
+import { Link } from 'react-router-dom'; // Import de la bibliothèque react-router-dom pour créer des liens
+
 import styles from "./card.module.css";
 
 function Card() {
-  const [apartments, setApartments] = useState([]); // Déclaration de la variable d'état 'apartments' et de la fonction pour la mettre à jour 'setApartments', initialisées à un tableau vide
+  const [apartments, setApartments] = useState([]);
 
   useEffect(() => {
-    // Hook useEffect qui permet d'exécuter du code lors du montage du composant
     async function fetchData() {
-      // Fonction asynchrone pour effectuer l'appel HTTP
       const result = await axios(
-        "/data.json" // L'appel HTTP pour récupérer les données du fichier JSON
+        "/data.json"
       );
-      setApartments(result.data); // Mise à jour de la variable d'état 'apartments' avec les données récupérées
+      setApartments(result.data);
     }
 
-    fetchData(); // Exécution de la fonction 'fetchData' pour effectuer l'appel HTTP
-  }, []); // Le tableau vide en deuxième argument indique que ce hook doit être exécuté une seule fois lors du montage du composant
+    fetchData();
+  }, []);
 
   return (
     <div className={styles.wrap}>
       {apartments.map(
-        (
-          apartment // Utilisation de la méthode 'map' pour itérer sur le tableau 'apartments' et générer un élément du DOM pour chaque appartement
-        ) => (
-          <div
-            className={`${styles.contenerCard} ${styles.imgContainer}`}
-            key={apartment.id}
-          >
-            <img
-              className={styles.imgCover}
-              src={apartment.cover}
-              alt={apartment.title}
-            />{" "}
-            {/* Utilisation de la balise 'img' pour afficher l'image de couverture de l'appartement */}
-            <h2 className={styles.titleCover}>{apartment.title}</h2>{" "}
-            {/* Utilisation de la balise 'h2' pour afficher le titre de l'appartement */}
-          </div>
+        (apartment) => (
+          <Link to={`/Accomodation/${apartment.id}`} key={apartment.id}>
+            <div className={`${styles.contenerCard} ${styles.imgContainer}`}>
+              <img
+                className={styles.imgCover}
+                src={apartment.cover}
+                alt={apartment.title}
+              />
+              <h2 className={styles.titleCover}>{apartment.title}</h2>
+            </div>
+          </Link>
         )
       )}
     </div>
   );
 }
 
-export default Card; // Export du composant 'Card' pour pouvoir l'utiliser dans d'autres fichiers
+export default Card;

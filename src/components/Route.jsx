@@ -5,9 +5,10 @@ import ComposantsDesktop from '../pages/Accomodation/Accomodation';
 
 const routes = [
   { path: '/', element: <Home /> },
-  { path: '/Accomodation', element: <ComposantsDesktop /> },
+  { path: '/accomodation/:id', element: <ComposantsDesktop /> },
   { path: '/APropos', element: <APropos /> },
-  { path: '*', element: <Notfound /> }
+  { path: '*', element: <Notfound /> },
+  
 ];
 
 export default routes;   
