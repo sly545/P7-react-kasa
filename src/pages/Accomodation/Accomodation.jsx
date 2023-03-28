@@ -1,11 +1,13 @@
-// Import de useParams depuis React Router et useState et useEffect depuis React
-import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+
+
 
 // Définition du composant Accomodation
 export default function Accomodation() {
-  // Récupération de l'ID de l'hébergement depuis l'URL avec useParams
+  // Récupération de l'ID de l'hébergement depuis les paramètres de l'URL avec useParams
   const { id } = useParams();
+  
 
   // Définition de l'état local accomodations avec useState, initialisé à une liste vide
   const [accomodations, setAccomodations] = useState([]);
@@ -43,4 +45,8 @@ export default function Accomodation() {
       )}
     </div>
   );
+
+
 }
+
+

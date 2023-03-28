@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
-import { Link } from 'react-router-dom'; // Import de la bibliothèque react-router-dom pour créer des liens
+import { Link } from 'react-router-dom'; 
 
 import styles from "./card.module.css";
 
