@@ -1,14 +1,13 @@
-import ImageGallery from "../../components/ImageGallery/ImageGallery" 
 
-export default function APropos() {
-    return (
-        <div> 
+
+
+
+export default function Apropos() {
+  return (
+    <div>
+      <h1> TEST</h1>
       
-        <ImageGallery />
-         
-        </div>
-    )
+      
+    </div>
+  );
 }
-console.log(ImageGallery);
-
-
