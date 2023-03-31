@@ -1,4 +1,17 @@
-.test{
-    width: 500px;
-    background-color: black;
+.WrapManege{
+  width: 80%;
+}
+.photoCarousel{
+    height: 415px;
+    width: 80%;
+    border-radius: 25px;
+    object-fit: cover;
+
+}
+
+.buttonLeft{
+    color: red;
+}
+.buttonRight{
+    color: blue;
 }

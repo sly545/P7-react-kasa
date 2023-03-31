@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import Manege from '../../components/Carrousell/Carrousell';
+import styles from '../Accomodation/Accomodation.module.css';
 
 export default function Accomodation() {
   const { id } = useParams();
@@ -17,25 +17,39 @@ export default function Accomodation() {
 
   return (
     <div>
-      <h2>Appartement sélectionné : {id}</h2>
+     
       {accomodation && (
         <div>
-          <h3>{accomodation.title}</h3>
-          <p>{accomodation.description}</p>
-          <p>Emplacement : {accomodation.location}</p>
-          <p>Équipements : {accomodation.equipments.join(', ')}</p>
-          <p>Tags : {accomodation.tags.join(', ')}</p>
-          <p>Note : {accomodation.rating}</p>
-          <p>Hôte : {accomodation.host.name}</p>
-          <Manege id={id} />
-          <img src={accomodation.host.picture} alt={accomodation.host.name} />
-        </div>
+          <Manege accomodation={accomodation}/>
+          <div className={styles.conteneurWrap} >
+              <div className={styles.wrapGauche}>
+                <div>
+                  <h3 className={styles.title} >{accomodation.title}</h3>
+                  <p className={styles.lieu} >{accomodation.location}</p>
+                </div>
+
+            <ul className={styles.cartier}>
+              {accomodation.tags.map((equipment, index) => (
+               <li className={styles.listCartier} key={index}>{equipment}</li>
+              ))}
+            </ul>
+                <p className={styles.descript} >{accomodation.description}</p>
+              </div>
+
+              <div className={styles.wrapDroite}>   
+                <p>{accomodation.host.name}</p>
+                <img src={accomodation.host.picture} alt={accomodation.host.name} />
+                <p>{accomodation.rating}</p>
+            <ul>
+              {accomodation.equipments.map((equipment, index) => (
+               <li className={styles.listeEquipe} key={index}>{equipment}</li>
+              ))}
+            </ul>
+            </div>
+          </div>
+      </div>
       )}
     </div>
   );
 }
 
-// Ajoutez la validation des props avec PropTypes
-Accomodation.propTypes = {
-  pictures: PropTypes.arrayOf(PropTypes.string)
-};

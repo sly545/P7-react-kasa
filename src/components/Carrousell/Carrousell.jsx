@@ -1,35 +1,31 @@
-import  { useState, useEffect } from "react";
+import { useState,} from "react";
 import PropTypes from 'prop-types';
 import styles from '../Carrousell/Carrousell.module.css'
 
-function Manege(props) {
-  const [photos, setPhotos] = useState([]);
-  
+function Carrousell(props) {
+  const photos = props.accomodation.pictures;
+  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
-  useEffect(() => {
-    // appeler l'API avec fetch
-    fetch("http://localhost:3000/data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const apartment = data.find((a) => a.id === props.id);
-        setPhotos(apartment.pictures);
-      })
-      .catch((error) => console.error(error));
-  }, [props.id]);
-  
+ 
+  const handleNextPhoto = () => {
+    setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length);
+  };
+
+  const handlePrevPhoto = () => {
+    setCurrentPhotoIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length);
+  };
+
   return (
-    <div>
-      <h1>Carrousel de photos</h1>
-      {photos.map((pictureUrl) => (
-        <img className={styles.test} key={pictureUrl} src={pictureUrl} alt="" />
-      ))}
+    <div className={styles.WrapManege} >
+      <button className={styles.buttonLeft} onClick={handlePrevPhoto}>Précédent</button>
+      <img className={styles.photoCarousel} src={photos[currentPhotoIndex]} alt="" />
+      <button className={styles.buttonRight} onClick={handleNextPhoto}>Suivant</button>
     </div>
   );
- 
 }
 
-export default Manege;      
-
-Manege.propTypes = {
-  id: PropTypes.string.isRequired,
+Carrousell.propTypes = {
+  accomodation:PropTypes.object.isRequired,
 };
+
+export default Carrousell;
