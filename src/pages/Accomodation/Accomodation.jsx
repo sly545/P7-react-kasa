@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Manege from '../../components/Carrousell/Carrousell';
 import styles from '../Accomodation/Accomodation.module.css';
+import Colapse from '../../components/Colapse/Colapse';
 
 export default function Accomodation() {
   const { id } = useParams();
@@ -21,6 +22,7 @@ export default function Accomodation() {
       {accomodation && (
         <div>
           <Manege accomodation={accomodation}/>
+          
           <div className={styles.conteneurWrap} >
               <div className={styles.wrapGauche}>
                 <div>
@@ -33,7 +35,7 @@ export default function Accomodation() {
                <li className={styles.listCartier} key={index}>{equipment}</li>
               ))}
             </ul>
-                <p className={styles.descript} >{accomodation.description}</p>
+                <Colapse accomodation={accomodation} />
               </div>
 
               <div className={styles.wrapDroite}>   
