@@ -4,11 +4,14 @@ import FleshBottom from '../../assets/fleshBottom.png';
 import FleshTop from '../../assets/fleshTop.png';
 import styles from '../Colapse/Colapse.module.css'
 
+
 export function Colapse(props) {
+ 
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
   const [isEquipmentsVisible, setIsEquipmentsVisible] = useState(false);
   const description = props.accomodation.description;
   const equipments = props.accomodation.equipments;
+
 
   const handleToggleDescription = () => {
     setIsDescriptionVisible(!isDescriptionVisible);
@@ -49,8 +52,11 @@ export function Colapse(props) {
           )}
         </div>
       )}
-    </div>
-  );
+     
+    
+    
+</div>
+);
 }
 
 Colapse.propTypes = {

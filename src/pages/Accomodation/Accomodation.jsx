@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Manege from '../../components/Carrousell/Carrousell';
+import Carousell from '../../components/Carrousell/Carrousell';
 import styles from '../Accomodation/Accomodation.module.css';
 import Colapse from '../../components/Colapse/Colapse';
+import Proprio from '../../components/Proprio/Propio';
+
 
 export default function Accomodation() {
   const { id } = useParams();
@@ -20,7 +22,8 @@ export default function Accomodation() {
     <div>
       {accomodation && (
         <div className={styles.Wrap}>
-          <Manege accomodation={accomodation}/>
+          <Carousell accomodation={accomodation}/>
+          
           <div className={styles.conteneurWrap} >
             <div className={styles.wrapGauche}>
               <div>
@@ -35,9 +38,7 @@ export default function Accomodation() {
               <Colapse accomodation={accomodation} showDescription />
             </div>
             <div className={styles.wrapDroite}>   
-              <p>{accomodation.host.name}</p>
-              <img src={accomodation.host.picture} alt={accomodation.host.name} />
-              <p>{accomodation.rating}</p>
+            <Proprio accomodation={accomodation}/>
               <Colapse accomodation={accomodation} showEquipments />
             </div>
           </div>
