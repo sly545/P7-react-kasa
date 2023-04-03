@@ -1,17 +1,19 @@
-ul{
-    padding: 0;
+
+.Wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
 }
+
 .conteneurWrap{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
-.wrapGauche{
-    width: 50%;
-}
-.wrapDroite{
-   width: 50%;
-}
 .cartier{
     display: flex;
     list-style: none;

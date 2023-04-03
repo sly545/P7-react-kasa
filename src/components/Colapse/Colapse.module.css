@@ -1,6 +1,60 @@
-.wrap{
-    display: flex;
-    flex-direction: row;
-    background-color: blue;
-  
+
+
+.contener{
+    background-color: #f1f1f1;
+    width: 500px;
+
+    
+
 }
+.TitleContener{
+   background-color: #ff6060;
+   border-radius: 10px;
+  
+   
+}
+
+.descriptTitle{
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    color: #f1f1f1;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    align-items: center;
+    padding-left: 20px;
+    border-radius:10px;
+
+    
+}
+.flesh{
+    width: 20px;
+}
+
+
+  @keyframes expand {
+    from { max-height: 0; }
+    to { max-height: 500px; }
+  }
+.descript{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ff6060;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0%;
+    animation: expand 1s ease-in-out;
+    overflow: hidden;
+    list-style-type: none;
+}
+
