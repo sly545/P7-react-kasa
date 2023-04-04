@@ -4,6 +4,7 @@ import Carousell from '../../components/Carrousell/Carrousell';
 import styles from '../Accomodation/Accomodation.module.css';
 import Colapse from '../../components/Colapse/Colapse';
 import Proprio from '../../components/Proprio/Propio';
+import Dropdown from '../../components/Colapse/Dropdown';
 
 
 export default function Accomodation() {
@@ -36,10 +37,19 @@ export default function Accomodation() {
                 ))}
               </ul>
               <Colapse accomodation={accomodation} showDescription />
+              <Dropdown 
+     title="description"
+     content={accomodation.description}
+     />
             </div>
             <div className={styles.wrapDroite}>   
             <Proprio accomodation={accomodation}/>
               <Colapse accomodation={accomodation} showEquipments />
+              <Dropdown 
+     title="equipement"
+     content={accomodation.equipments}
+     />
+    
             </div>
           </div>
         </div>

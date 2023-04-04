@@ -2,6 +2,7 @@
 
 .contener{
     background-color: #f1f1f1;
+    margin: 25px;
 
 }
 .TitleContener{
@@ -26,6 +27,7 @@
     align-items: center;
     padding-left: 4%;
     border-radius:10px;
+
 
     
 }
