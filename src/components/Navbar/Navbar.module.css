@@ -15,8 +15,6 @@
     padding-left: 10%;
     padding-top: 2%;
 }
-
-
 .home{
     padding-right: 25px;
     text-decoration: none;
@@ -27,7 +25,6 @@
     letter-spacing: 0em;
     text-align: right;
     color: #ff6060;
-
 }
 .apropo{
     text-decoration: none;
@@ -38,8 +35,9 @@
     letter-spacing: 0em;
     text-align: right;
     color: #ff6060;
-
 }
+
+
 .logo{
     width: 150px;
    

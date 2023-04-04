@@ -25,8 +25,8 @@ export default function Accomodation() {
           <Carousell accomodation={accomodation}/>
           
           <div className={styles.conteneurWrap} >
-            <div className={styles.wrapGauche} >
-              <div >
+            <div className={styles.wrapGauche}>
+              <div>
                 <h3 className={styles.title} >{accomodation.title}</h3>
                 <p className={styles.lieu} >{accomodation.location}</p>
               </div>
