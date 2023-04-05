@@ -27,24 +27,24 @@ export default function Accomodation() {
           
           <div className={styles.conteneurWrap} >
             <div className={styles.wrapGauche}>
+
               <div>
                 <h3 className={styles.title} >{accomodation.title}</h3>
                 <p className={styles.lieu} >{accomodation.location}</p>
-              </div>
-              <ul className={styles.cartier}>
+               <ul className={styles.cartier}>
                 {accomodation.tags.map((equipment, index) => (
                   <li className={styles.listCartier} key={index}>{equipment}</li>
                 ))}
               </ul>
+              </div>
               <Colapse
      title="Description"
      content={accomodation.description}
      />
             </div>
-            <div className={styles.wrapDroite}>   
+            <div className={styles.wrapDroite}>  
             <Proprio accomodation={accomodation}/>
-             
-            <Colapse
+          <Colapse
   title="Equipement"
   content={
     <ul className={styles.test}>

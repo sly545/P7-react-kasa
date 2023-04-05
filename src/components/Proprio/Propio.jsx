@@ -3,6 +3,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import EtoileFull from '../../assets/Etoileplein.svg'
 import EtoileEmpty from '../../assets/Etoilevide.svg'
+import styles from '../Proprio/Proprio.module.css'
 
 function Proprio(props) {
   // Utilisation de la fonction useState pour définir les variables name, picture et rating à partir des propriétés de l'objet accomodation passé en tant que prop
@@ -27,8 +28,10 @@ function Proprio(props) {
 
   return (
     <div>
-      <h3>{name}</h3>
-     <p><img src={picture} alt={name} /></p>
+      <div className={styles.essai}> 
+      <h3 className={styles.tiltelProprio}>{name}</h3>
+     <p><img className={styles.picturesProprio} src={picture} alt={name} /></p>
+     </div>
       <p>{stars}</p> {/* Affichage des étoiles */}
     </div>
   );

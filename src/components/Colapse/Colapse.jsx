@@ -5,15 +5,13 @@ import FleshTop from '../../assets/fleshTop.png';
 import styles from '../Colapse/Colapse.module.css'
 
 
-
-
-export function Dropdown ({ title, content }) {
+export function Colapse ({ title, content }) {
 
     //state etat ouver et feremer 
     const [isOpen, setIsopen] = useState(false);
 
     // le handeler 
-    const handleCickDropdown = () => {
+    const handleCickColapse = () => {
         setIsopen(!isOpen);
     }
 
@@ -22,9 +20,9 @@ export function Dropdown ({ title, content }) {
         <div className={styles.contener}>
             <div>
                 <div className={styles.TitleContener}>
-                <h2 className={styles.descriptTitle} onClick={handleCickDropdown}>
+                <h2 className={styles.descriptTitle} onClick={handleCickColapse}>
                     { title }
-                    <img className={styles.flesh} src={isOpen ? FleshTop : FleshBottom } alt="toggle dropdown"/>
+                    <img className={styles.flesh} src={isOpen ? FleshTop : FleshBottom } alt="toggle colapse"/>
                 </h2>
 
               </div>
@@ -35,8 +33,8 @@ export function Dropdown ({ title, content }) {
     );
 }
 
-Dropdown.propTypes = {
+Colapse.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired
 };
-export default Dropdown;
+export default Colapse;

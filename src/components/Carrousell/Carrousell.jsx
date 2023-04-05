@@ -1,6 +1,9 @@
 import { useState,} from "react";
 import PropTypes from 'prop-types';
 import styles from '../Carrousell/Carrousell.module.css'
+import fleshLeft from '../../assets/felshLeft.png'
+import fleshRight from '../../assets/flesheRight.png' 
+
 
 function Carrousell(props) {
   const photos = props.accomodation.pictures;
@@ -16,11 +19,11 @@ function Carrousell(props) {
   };
 
   return (
-    <div className={styles.WrapManege} >
-      <button className={styles.buttonLeft} onClick={handlePrevPhoto}>Précédent</button>
-      <img className={styles.photoCarousel} src={photos[currentPhotoIndex]} alt="" />
-      <button className={styles.buttonRight} onClick={handleNextPhoto}>Suivant</button>
-    </div>
+    <div className={styles.WrapManege}>
+    <img className={styles.buttonLeft} src={fleshLeft} onClick={handlePrevPhoto} alt="Précédent" />
+    <img className={styles.photoCarousel} src={photos[currentPhotoIndex]} alt="" />
+    <img className={styles.buttonRight} src={fleshRight} onClick={handleNextPhoto} alt="Suivant" />
+  </div>
   );
 }
 

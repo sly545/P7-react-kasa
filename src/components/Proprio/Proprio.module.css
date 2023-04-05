@@ -1,0 +1,12 @@
+.essai{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.tiltelProprio{
+   color: #ff6060;
+}
+.picturesProprio{
+    width: 90px;
+}

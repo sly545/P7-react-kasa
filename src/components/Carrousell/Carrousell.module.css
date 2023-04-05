@@ -1,8 +1,10 @@
 .WrapManege{
   width: 80%;
+  margin-left: 15%;
+  padding-top: 25px;
 }
 .photoCarousel{
-    height: 415px;
+    height: 340px;
     width: 80%;
     border-radius: 25px;
     object-fit: cover;
@@ -10,8 +12,13 @@
 }
 
 .buttonLeft{
-    color: red;
+    top: 27%;
+    position: absolute;
+    left: 18%;
 }
 .buttonRight{
-    color: blue;
+   top: 27%;
+   position: absolute;
+   right: 19%
+
 }
