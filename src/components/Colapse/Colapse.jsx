@@ -5,61 +5,38 @@ import FleshTop from '../../assets/fleshTop.png';
 import styles from '../Colapse/Colapse.module.css'
 
 
-export function Colapse(props) {
- 
-  const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
-  const [isEquipmentsVisible, setIsEquipmentsVisible] = useState(false);
-  const description = props.accomodation.description;
-  const equipments = props.accomodation.equipments;
 
 
-  const handleToggleDescription = () => {
-    setIsDescriptionVisible(!isDescriptionVisible);
-  };
+export function Dropdown ({ title, content }) {
 
-  const handleToggleEquipments = () => {
-    setIsEquipmentsVisible(!isEquipmentsVisible);
-  };
+    //state etat ouver et feremer 
+    const [isOpen, setIsopen] = useState(false);
 
-  return (
-    <div className={styles.contener}>
-      {props.showDescription && (
-        <div>
-          <div className={styles.TitleContener}>
-            <h2 className={styles.descriptTitle} onClick={handleToggleDescription}>
-              Description
-              <img className={styles.flesh} src={isDescriptionVisible ? FleshTop : FleshBottom} alt="toggle description" />
-            </h2>
-          </div>
-          {isDescriptionVisible && <h3 className={styles.descript} >{description}</h3>}
+    // le handeler 
+    const handleCickDropdown = () => {
+        setIsopen(!isOpen);
+    }
+
+    //jsx qui change pas 
+    return(
+        <div className={styles.contener}>
+            <div>
+                <div className={styles.TitleContener}>
+                <h2 className={styles.descriptTitle} onClick={handleCickDropdown}>
+                    { title }
+                    <img className={styles.flesh} src={isOpen ? FleshTop : FleshBottom } alt="toggle dropdown"/>
+                </h2>
+
+              </div>
+              {isOpen && <h3 className={styles.descript}> {content}</h3>}
+            </div>
         </div>
-      )}
- 
-      {props.showEquipments && (
-        <div>
-          <div className={styles.TitleContener}>
-            <h2 className={styles.descriptTitle} onClick={handleToggleEquipments}>
-              Equipements
-              <img className={styles.flesh} src={isEquipmentsVisible ? FleshTop : FleshBottom} alt="toggle equipments" />
-            </h2>
-          </div>
-          {isEquipmentsVisible && (
-            <ul className={styles.descript} >
-              {equipments.map((equipment, index) => (
-                <li  key={index}>{equipment}</li>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
-</div>
-);
+
+    );
 }
 
-Colapse.propTypes = {
-  accomodation: PropTypes.object.isRequired,
-  showDescription: PropTypes.bool,
-  showEquipments: PropTypes.bool,
+Dropdown.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired
 };
-
-export default Colapse;
+export default Dropdown;

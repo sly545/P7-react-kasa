@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 import ImageApropo from "../../images/ImageApropos.png"
-import Dropdown from "../../components/Colapse/Dropdown";
+import Colapse from "../../components/Colapse/Colapse";
 import styles from '../APropos/Apropos.module.css'
 
 
@@ -12,12 +12,12 @@ export default function Apropos() {
      
      <Banner imgSrc={ImageApropo} showTitle={false} />
      <div className={styles.wrapApropos}> 
-     <Dropdown 
+     <Colapse 
      title="hdkfsdhfl"
      content="jkdshqfkdjfklq"
      />
 
-    <Dropdown 
+    <Colapse
      title="hdkfsdhfl"
      content="jkdshqfkdjfklq"
      />

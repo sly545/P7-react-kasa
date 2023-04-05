@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Carousell from '../../components/Carrousell/Carrousell';
 import styles from '../Accomodation/Accomodation.module.css';
 import Proprio from '../../components/Proprio/Propio';
-import Dropdown from '../../components/Colapse/Dropdown';
+import Colapse from '../../components/Colapse/Colapse';
 
 
 
@@ -36,7 +36,7 @@ export default function Accomodation() {
                   <li className={styles.listCartier} key={index}>{equipment}</li>
                 ))}
               </ul>
-              <Dropdown 
+              <Colapse
      title="Description"
      content={accomodation.description}
      />
@@ -44,7 +44,7 @@ export default function Accomodation() {
             <div className={styles.wrapDroite}>   
             <Proprio accomodation={accomodation}/>
              
-            <Dropdown 
+            <Colapse
   title="Equipement"
   content={
     <ul className={styles.test}>
@@ -61,4 +61,4 @@ export default function Accomodation() {
     </div>
   );
 }
-
+ 
