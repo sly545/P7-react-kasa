@@ -5,13 +5,16 @@
     flex-direction: column;
     align-items: center;
     margin-left: 0%;
+
 }
 
-.conteneurWrap{
-    width: 80%;
+.conteneurWrap {
     display: flex;
     align-items: center;
-}
+    justify-content: space-between;
+    width: 80%;
+    flex-direction: column;
+  }
 
 .cartier{
     display: flex;
@@ -34,16 +37,32 @@
     color: #ff6060;
     
 }
-
-.wrapGauche{
- 
-    width: 50%;
-}
-.test{
+.liste{
     margin: 0%;
     list-style-type: none;
 }
-.wrapDroite{
-  
+.contenerProprio{
+    width: 100%;
+    background-color: red;
+
+}
+.propri{
+    background-color: yellow;
+}
+.apart{
+    background-color: blue;
+}
+
+
+.contenerEquipeDescript{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.tailleDes{
+
+    width: 50%;
+}
+.tailleEqui{
     width: 50%;
 }

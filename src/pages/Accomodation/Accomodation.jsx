@@ -5,8 +5,6 @@ import styles from '../Accomodation/Accomodation.module.css';
 import Proprio from '../../components/Proprio/Propio';
 import Colapse from '../../components/Colapse/Colapse';
 
-
-
 export default function Accomodation() {
   const { id } = useParams();
   const [accomodations, setAccomodations] = useState([]);
@@ -23,42 +21,49 @@ export default function Accomodation() {
     <div>
       {accomodation && (
         <div className={styles.Wrap}>
-          <Carousell accomodation={accomodation}/>
-          
-          <div className={styles.conteneurWrap} >
-            <div className={styles.wrapGauche}>
+          <Carousell accomodation={accomodation} />
+          <div className={styles.conteneurWrap}>
 
-              <div>
-                <h3 className={styles.title} >{accomodation.title}</h3>
-                <p className={styles.lieu} >{accomodation.location}</p>
-               <ul className={styles.cartier}>
+            <div className={styles.contenerProprio}>
+              <div className={styles.propri}>
+              <Proprio accomodation={accomodation} />
+              </div>
+            <div className={styles.apart}>  
+              <h3 className={styles.title}>{accomodation.title}</h3>
+              <p className={styles.lieu}>{accomodation.location}</p>
+              <ul className={styles.cartier}>
                 {accomodation.tags.map((equipment, index) => (
-                  <li className={styles.listCartier} key={index}>{equipment}</li>
+                  <li className={styles.listCartier} key={index}>
+                    {equipment}
+                  </li>
                 ))}
               </ul>
-              </div>
-              <Colapse
-     title="Description"
-     content={accomodation.description}
-     />
             </div>
-            <div className={styles.wrapDroite}>  
-            <Proprio accomodation={accomodation}/>
-          <Colapse
-  title="Equipement"
-  content={
-    <ul className={styles.test}>
-      {accomodation.equipments.map((equipment, index) => (
-        <li key={index}>{equipment}</li>
-      ))}
-    </ul>
-  }
-/>
-           </div>
+            </div>
+
+            <div className={styles.contenerEquipeDescript}>
+              <div className={styles.tailleDes}>
+                <Colapse
+                  title="Description"
+                  content={accomodation.description}
+                />
+              </div>
+              <div className={styles.tailleEqui}>
+                <Colapse
+                  title="Equipement"
+                  content={
+                    <ul className={styles.liste}>
+                      {accomodation.equipments.map((equipment, index) => (
+                        <li key={index}>{equipment}</li>
+                      ))}
+                    </ul>
+                  }
+                />
+              </div>
+            </div>
           </div>
         </div>
       )}
     </div>
   );
 }
- 

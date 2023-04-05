@@ -1,7 +1,8 @@
-.essai{
+.nom{
     display: flex;
     flex-direction: row;
-    
+    background-color: blue;
+    align-items: center;
 
 }
 .tiltelProprio{
@@ -9,4 +10,5 @@
 }
 .picturesProprio{
     width: 90px;
+    border-radius: 50%;
 }

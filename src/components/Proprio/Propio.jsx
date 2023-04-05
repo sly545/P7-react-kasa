@@ -28,10 +28,10 @@ function Proprio(props) {
 
   return (
     <div>
-      <div className={styles.essai}> 
+     
       <h3 className={styles.tiltelProprio}>{name}</h3>
      <p><img className={styles.picturesProprio} src={picture} alt={name} /></p>
-     </div>
+     
       <p>{stars}</p> {/* Affichage des étoiles */}
     </div>
   );
