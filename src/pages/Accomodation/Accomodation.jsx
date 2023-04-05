@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Carousell from '../../components/Carrousell/Carrousell';
 import styles from '../Accomodation/Accomodation.module.css';
-import Colapse from '../../components/Colapse/Colapse';
 import Proprio from '../../components/Proprio/Propio';
 import Dropdown from '../../components/Colapse/Dropdown';
+
 
 
 export default function Accomodation() {
@@ -36,21 +36,25 @@ export default function Accomodation() {
                   <li className={styles.listCartier} key={index}>{equipment}</li>
                 ))}
               </ul>
-              <Colapse accomodation={accomodation} showDescription />
               <Dropdown 
-     title="description"
+     title="Description"
      content={accomodation.description}
      />
             </div>
             <div className={styles.wrapDroite}>   
             <Proprio accomodation={accomodation}/>
-              <Colapse accomodation={accomodation} showEquipments />
-              <Dropdown 
-     title="equipement"
-     content={accomodation.equipments}
-     />
-    
-            </div>
+             
+            <Dropdown 
+  title="Equipement"
+  content={
+    <ul className={styles.test}>
+      {accomodation.equipments.map((equipment, index) => (
+        <li key={index}>{equipment}</li>
+      ))}
+    </ul>
+  }
+/>
+           </div>
           </div>
         </div>
       )}
