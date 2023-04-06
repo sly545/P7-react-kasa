@@ -1,11 +1,11 @@
 .WrapManege{
   width: 80%;
-  margin-left: 15%;
+  margin-left: 0%;
   padding-top: 25px;
 }
 .photoCarousel{
     height: 340px;
-    width: 80%;
+    width: 100%;
     border-radius: 25px;
     object-fit: cover;
 
@@ -14,11 +14,11 @@
 .buttonLeft{
     top: 27%;
     position: absolute;
-    left: 18%;
+    left: 10%;
 }
 .buttonRight{
    top: 27%;
    position: absolute;
-   right: 19%
+   right: 10%
 
 }

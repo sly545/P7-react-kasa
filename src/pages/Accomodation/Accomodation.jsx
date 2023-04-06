@@ -22,25 +22,33 @@ export default function Accomodation() {
       {accomodation && (
         <div className={styles.Wrap}>
           <Carousell accomodation={accomodation} />
+          
           <div className={styles.conteneurWrap}>
 
             <div className={styles.contenerProprio}>
-              <div className={styles.propri}>
-              <Proprio accomodation={accomodation} />
-              </div>
-            <div className={styles.apart}>  
-              <h3 className={styles.title}>{accomodation.title}</h3>
-              <p className={styles.lieu}>{accomodation.location}</p>
+             
+            <div className={styles.apart}> 
+            <div className={styles.locali}> 
+              <span><h3 className={styles.title}>{accomodation.title}</h3>
+              <p className={styles.lieu}>{accomodation.location}</p></span>
+            </div>
+            <div className={styles.uli}>
               <ul className={styles.cartier}>
                 {accomodation.tags.map((equipment, index) => (
                   <li className={styles.listCartier} key={index}>
                     {equipment}
                   </li>
+                  
                 ))}
               </ul>
             </div>
+             </div>
+            
+            <div className={styles.propri}>
+              <Proprio accomodation={accomodation} />
             </div>
-
+            </div>
+            <div className={styles.trop}>
             <div className={styles.contenerEquipeDescript}>
               <div className={styles.tailleDes}>
                 <Colapse
@@ -60,6 +68,7 @@ export default function Accomodation() {
                   }
                 />
               </div>
+            </div>
             </div>
           </div>
         </div>

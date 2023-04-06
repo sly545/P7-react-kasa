@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import EtoileFull from '../../assets/Etoileplein.svg'
@@ -28,11 +27,13 @@ function Proprio(props) {
 
   return (
     <div>
-     
+     <div className={styles.nom}> 
       <h3 className={styles.tiltelProprio}>{name}</h3>
-     <p><img className={styles.picturesProprio} src={picture} alt={name} /></p>
-     
-      <p>{stars}</p> {/* Affichage des étoiles */}
+     <p className={styles.contenentimg} ><img className={styles.picturesProprio} src={picture} alt={name} /></p>
+     </div>
+      <div className={styles.etoile}> 
+      <p className={styles.starts} >{stars}</p> {/* Affichage des étoiles */}
+      </div>
     </div>
   );
 }

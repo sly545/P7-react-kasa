@@ -20,10 +20,12 @@ export function Colapse ({ title, content }) {
         <div className={styles.contener}>
             <div>
                 <div className={styles.TitleContener}>
+                  
                 <h2 className={styles.descriptTitle} onClick={handleCickColapse}>
                     { title }
                     <img className={styles.flesh} src={isOpen ? FleshTop : FleshBottom } alt="toggle colapse"/>
                 </h2>
+               
 
               </div>
               {isOpen && <h3 className={styles.descript}> {content}</h3>}

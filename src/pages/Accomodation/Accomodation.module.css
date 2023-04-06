@@ -19,38 +19,55 @@
 .cartier{
     display: flex;
     list-style: none;
+    padding-top: 14px;
+    
 }
 .lieu{
     color: #ff6060;
+    margin: 0;
 }
 .listCartier{
     padding-right: 20px;
     background-color: #ff6060;
+    color: #f1f1f1;
     border-radius: 25px;
     display: flex;
     padding-left: 30px;
     padding-right: 30px;
+    width: 115px;
+    justify-content: center;
+    margin-right: 10px;
 }
 
 
 .title{
     color: #ff6060;
+   margin-top: 27px;
+   margin-bottom: 4px;
     
 }
 .liste{
     margin: 0%;
     list-style-type: none;
 }
+
+.apart{
+    display: flex;
+    flex-direction: column;
+}
+
 .contenerProprio{
     width: 100%;
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
-}
 .propri{
-    background-color: yellow;
-}
-.apart{
-    background-color: blue;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -60,9 +77,15 @@
     width: 100%;
 }
 .tailleDes{
-
-    width: 50%;
+  width: 95%;
 }
 .tailleEqui{
-    width: 50%;
+    width: 95%;
+    
+   
+}
+.trop{
+    display: flex;
+    flex-direction: row;
+    width: 105%;
 }
