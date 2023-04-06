@@ -51,10 +51,9 @@ export default function Accomodation() {
             <div className={styles.trop}>
             <div className={styles.contenerEquipeDescript}>
               <div className={styles.tailleDes}>
-                <Colapse
-                  title="Description"
-                  content={accomodation.description}
-                />
+              
+<Colapse title="description" content={accomodation.description} hasHeight={true} />
+              
               </div>
               <div className={styles.tailleEqui}>
                 <Colapse
@@ -66,6 +65,7 @@ export default function Accomodation() {
                       ))}
                     </ul>
                   }
+                  hasHeight={true}
                 />
               </div>
             </div>
