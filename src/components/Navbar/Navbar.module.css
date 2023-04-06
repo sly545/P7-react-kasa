@@ -42,3 +42,36 @@
     width: 150px;
    
 }
+@media screen and (max-width:767px){
+   .home{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+
+   }
+   .apropo{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+
+   }
+   .logo{
+    width:135px;
+   }
+ }
+ @media screen and (max-width:360px){
+   
+   .logo{
+    width: 101px;
+   }
+   .home{
+    padding-right:12px;
+   }
+
+ }

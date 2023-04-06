@@ -12,7 +12,11 @@ export default function Banner({ imgSrc, showTitle = true }) {
           src={imgSrc || ImgBanner}
           alt="Vue d'une crique bordée de sapins et d'une falaise escarpée en arrière-plan"
         />
-        {showTitle && <h1 className={styles.title}>Chez vous, partout et ailleurs</h1>}
+        {showTitle && <h1 className={styles.title}>
+    Chez vous,
+    <br className={styles.break} />
+    partout et ailleurs
+  </h1>}
       </div>
     </div>
   );

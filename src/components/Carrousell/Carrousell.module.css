@@ -3,21 +3,20 @@
   margin-left: 0%;
   padding-top: 25px;
 }
-.photoCarousel{
-    height: 340px;
-    width: 100%;
-    border-radius: 25px;
-    object-fit: cover;
-
+.photoCarousel {
+  height: 415px;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
 }
 
 .buttonLeft{
-    top: 27%;
+    top: 295px;
     position: absolute;
     left: 10%;
 }
 .buttonRight{
-   top: 27%;
+   top: 295px;
    position: absolute;
    right: 10%
 

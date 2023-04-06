@@ -8,7 +8,6 @@ width: 80%;
 mix-blend-mode: darken;
 filter: brightness(74%);
 
-   
 }
 .title{
     font-family: Montserrat;
@@ -37,3 +36,32 @@ filter: brightness(74%);
     margin-top: 2%;
     
 }
+
+.break{
+    display: none;
+}
+
+@media screen and (max-width:767px){
+     
+    .break {
+        display: block;
+    }
+
+    .title{
+       font-family: Montserrat;
+       font-size: 30px;
+       font-weight: 500;
+       line-height: 37px;
+       letter-spacing: 0em;
+        text-align: left;
+
+    }
+    
+    .ImgBanner{
+
+        height: 111px;
+    }
+ }
+ 
+
+
