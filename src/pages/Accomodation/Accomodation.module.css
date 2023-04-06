@@ -19,7 +19,7 @@
 .cartier{
     display: flex;
     list-style: none;
-    padding-top: 14px;
+    margin-bottom: 22px;
     
 }
 .lieu{
@@ -34,9 +34,16 @@
     display: flex;
     padding-left: 30px;
     padding-right: 30px;
-    width: 115px;
+    width: 145px;
     justify-content: center;
     margin-right: 10px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 
@@ -44,6 +51,13 @@
     color: #ff6060;
    margin-top: 27px;
    margin-bottom: 4px;
+   font-family: Montserrat;
+   font-size: 36px;
+   font-weight: 500; 
+   line-height: 51px;
+   letter-spacing: 0em;
+   text-align: left;
+
     
 }
 .liste{

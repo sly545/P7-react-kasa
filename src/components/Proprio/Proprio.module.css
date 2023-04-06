@@ -2,16 +2,22 @@
 .nom{
     display: flex;
     flex-direction: row;
-
     align-items: center;
-    width: 139px;
-    padding-right: 18px;
+    width: 158px;
+   
 
 }
 .tiltelProprio{
    color: #ff6060;
    margin: 0%;
    padding-left: 25px;
+   font-family: Montserrat;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 26px;
+   letter-spacing: 0em;
+   text-align: right;
+
 }
 .picturesProprio{
     width: 64px;
@@ -24,10 +30,11 @@
     
 }
 .starts{
-    padding-left: 28%;
+    padding-left: 27%;
     margin: 0%;
     flex-wrap: nowrap;
-    width: 100px;
+    width: 167px;
+    padding-top: 9px;
 }
 .contenentimg{
     margin: 0%;
