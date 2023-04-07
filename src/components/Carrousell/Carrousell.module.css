@@ -21,6 +21,13 @@
    right: 10%
 
 }
+.counter{
+  color: white;
+  position: absolute;
+  top: 504px;
+  color: white;
+  right: 50%;
+}
 
 
 @media screen and (max-width:767px){
