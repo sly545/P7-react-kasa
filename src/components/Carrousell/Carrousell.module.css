@@ -21,3 +21,36 @@
    right: 10%
 
 }
+
+
+@media screen and (max-width:767px){
+
+  .WrapManege{
+    width: 95%;
+    margin-left: 0%;
+    padding-top: 25px;
+  }
+  .photoCarousel {
+    height: 255px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .buttonLeft{
+    top: 198px;
+    position: absolute;
+    left: 3%;
+    width: 15px;
+}
+  .buttonRight{
+   top: 198px;
+   position: absolute;
+   right: 3%;
+   width: 15px;
+ 
+}
+
+
+}
+

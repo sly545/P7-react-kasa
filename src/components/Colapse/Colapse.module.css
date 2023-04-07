@@ -73,4 +73,16 @@ ul{
 .height400 {
     height: 160px;
   }
-  
+  @media screen and (max-width:767px){
+    .contener{
+        margin-top: 15px;
+        width: 95%;
+        margin-left: 9px;
+        margin-bottom: 10px;
+        
+    }
+    .height400 {
+        height: auto;
+      }
+
+  }

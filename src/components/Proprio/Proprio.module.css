@@ -39,3 +39,23 @@
 .contenentimg{
     margin: 0%;
 }
+
+@media screen and (max-width:767px){
+.query{
+    display: flex;
+    width: 94.6%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.starts{
+    padding-left: 0%;
+    margin: 0%;
+}
+.nom{
+    padding-left: 34px;
+
+}
+
+}

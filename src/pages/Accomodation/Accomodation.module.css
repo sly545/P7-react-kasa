@@ -103,3 +103,80 @@
     flex-direction: row;
     width: 105%;
 }
+
+@media screen and (max-width:767px){
+
+
+     
+.conteneurWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    flex-direction: column;
+  }
+
+
+
+    .title{
+        color: #ff6060;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+   
+    .lieu{
+        color: #ff6060;
+        margin: 0;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    
+    }
+
+    .cartier{
+        flex-wrap: wrap;
+        
+    }
+    li{
+        margin-bottom: 12px;
+    }
+    .listCartier{
+
+        width: 50px;
+        border-radius: 5px;
+        font-size: 15px;
+    
+    }
+    .contenerProprio{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .contenerEquipeDescript{
+        flex-direction: column;
+
+    
+    }
+     
+    
+.propri{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.etoileFull{
+    color: black;
+}
+
+}
