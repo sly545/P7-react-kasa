@@ -76,7 +76,7 @@ ul{
   @media screen and (max-width:767px){
     .contener{
         margin-top: 15px;
-        width: 95%;
+        width: 100%;
         margin-left: 9px;
         margin-bottom: 10px;
         
@@ -86,3 +86,5 @@ ul{
       }
 
   }
+
+  

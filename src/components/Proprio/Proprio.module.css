@@ -26,14 +26,14 @@
 .etoile{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: flex-end;
    
     
 }
 .starts{
-    padding-left: 27%;
+ 
     margin: 0%;
     flex-wrap: nowrap;
-    width: 167px;
     padding-top: 9px;
 }
 .contenentimg{
@@ -43,7 +43,7 @@
 @media screen and (max-width:767px){
 .query{
     display: flex;
-    width: 94.6%;
+    width: 100%;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -53,9 +53,21 @@
     padding-left: 0%;
     margin: 0%;
 }
-.nom{
-    padding-left: 34px;
+
 
 }
+
+@media screen and (max-width:385px){
+
+   .starts{
+    width: auto;
+    padding-left: 0%;
+  }
+
+  .query{
+    justify-content: space-between;
+}
+
+
 
 }

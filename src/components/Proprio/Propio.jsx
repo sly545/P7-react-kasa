@@ -16,7 +16,7 @@ function Proprio(props) {
   // Boucle for pour générer les étoiles pleines en fonction de la valeur de rating
   for (let i = 0; i < rating; i++) {
     // Ajout d'une étoile pleine au tableau stars
-    stars.push(<img  src={EtoileFull} alt="étoile pleine" key={i} />);
+    stars.push(<img src={EtoileFull} alt="étoile pleine" key={i} />);
   }
   
   // Boucle for pour générer les étoiles vides
