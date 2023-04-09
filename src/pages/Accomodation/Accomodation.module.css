@@ -20,6 +20,7 @@
     display: flex;
     list-style: none;
     margin-bottom: 22px;
+    flex-wrap: wrap;
     
 }
 .lieu{
@@ -28,6 +29,7 @@
 }
 .listCartier{
     padding-right: 20px;
+    margin-bottom: 10px;
     background-color: #ff6060;
     color: #f1f1f1;
     border-radius: 25px;
@@ -121,7 +123,7 @@
     .title{
         color: #ff6060;
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0em;
@@ -145,13 +147,15 @@
         
     }
     li{
-        margin-bottom: 12px;
+        margin-bottom: 5px;
     }
     .listCartier{
-
-        width: 50px;
+        width:115px;
         border-radius: 5px;
-        font-size: 15px;
+        font-size: 14px;
+        padding-left: 2px;
+        padding-right: 2px;
+
     
     }
     .contenerProprio{
@@ -176,6 +180,4 @@
     width: 100%;
 }
 }
-@media screen and (max-width:767px){
 
-}

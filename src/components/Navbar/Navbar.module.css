@@ -6,7 +6,7 @@
     text-decoration: none;
     
 }
-.wrap{
+.wrapNav{
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,7 @@
     width: 150px;
    
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:912px){
    .home{
     font-family: Montserrat;
     font-size: 20px;
@@ -64,6 +64,16 @@
    .logo{
     width:135px;
    }
+   .nav{
+    margin-top:15px;
+    }
+    .wrapNav{
+
+        padding-right: 3%;
+        padding-left: 3%;
+     
+    }
+
  }
  @media screen and (max-width:360px){
    
@@ -73,5 +83,6 @@
    .home{
     padding-right:12px;
    }
+
 
  }

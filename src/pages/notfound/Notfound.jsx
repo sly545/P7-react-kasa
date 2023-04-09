@@ -12,7 +12,7 @@ export default function Notfound() {
           alt="message ereur la page n'est pas trouver"
         />
         <p className={styles.MessageEreur}>
-          Oups! La page que vous demandez n&apos;existe pas.
+          Oups! La page que <br className={styles.break} /> vous demandez n&apos;existe pas.
         </p>
         <Link className={styles.lien} to="/">
           Retourner sur la page d&apos;accueil

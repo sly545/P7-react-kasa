@@ -13,6 +13,12 @@
     margin-bottom: 2%;
 }
 
+.Card_imgCover__Uc8ek{
+   width: 22px;
+}
+
+
+
 .contenerCard{
    border: 1px;
    position: relative;
@@ -47,17 +53,28 @@
      z-index: 1; 
 }
 
-@media screen and (max-width:767px){
+/*  mediaquery tablette  */
+@media screen and (max-width:912px){
    .wrap{
       background-color: white;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-left: 5%;  
+      gap: 0px;
    }
    .imgCover{
-      width: 100%;
+      width:100%;
       height: 270px;
+      margin-bottom: 20px;
    
    }
-   
 
 }
+
+
+
+/*  mediaquery smarte phone  */
+
 
 

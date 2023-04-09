@@ -41,7 +41,7 @@ filter: brightness(74%);
     display: none;
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:912px){
      
     .break {
         display: block;
@@ -58,8 +58,10 @@ filter: brightness(74%);
     }
     
     .ImgBanner{
-
+        width: 90%;
         height: 111px;
     }
+
+    
  }
  

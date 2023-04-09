@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className={styles.wrap}>
+    <div className={styles.wrapNav}>
       <img className={styles.logo} src={logo} alt="logo" />
       <ul className={styles.liste}>
         <nav className={styles.nav}>
@@ -21,7 +21,7 @@ export default function Navbar() {
               to="/"
               style={location.pathname === "/" ? activeStyle : {}}
             >
-              Home
+              Accueil
             </Link>
           </li>
           <li>
@@ -30,7 +30,7 @@ export default function Navbar() {
               to="/APropos"
               style={location.pathname === "/APropos" ? activeStyle : {}}
             >
-              A propos
+              A Propos
             </Link>
           </li>
         </nav>

@@ -45,13 +45,13 @@
   }
 
   .buttonLeft{
-    top: 198px;
+    top: 224px;
     position: absolute;
     left: 3%;
     width: 15px;
 }
   .buttonRight{
-   top: 198px;
+   top: 224px;
    position: absolute;
    right: 3%;
    width: 15px;
@@ -59,7 +59,7 @@
 }
 
 .counter{
-  top: 332px;
+  top: 340px;
   right:47%;
 }
 
