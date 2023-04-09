@@ -49,7 +49,7 @@ filter: brightness(74%);
 
     .title{
        font-family: Montserrat;
-       font-size: 30px;
+       font-size: 43px;
        font-weight: 500;
        line-height: 37px;
        letter-spacing: 0em;
@@ -59,9 +59,15 @@ filter: brightness(74%);
     
     .ImgBanner{
         width: 90%;
-        height: 111px;
+        height: 223px;
     }
 
     
  }
- 
+
+ @media screen and (max-width:425px){
+
+    .title{
+        font-size: 30px;
+     }
+ }

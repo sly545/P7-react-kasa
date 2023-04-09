@@ -29,8 +29,44 @@
   right: 50%;
 }
 
+@media screen and (max-width:912px){
 
-@media screen and (max-width:767px){
+  .WrapManege{
+    width: 95%;
+    margin-left: 0%;
+    padding-top: 25px;
+  }
+  .photoCarousel {
+    height: 370px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .buttonLeft{
+    top: 283px;
+    position: absolute;
+    left: 3%;
+    width: 15px;
+}
+  .buttonRight{
+   top: 283px;
+   position: absolute;
+   right: 3%;
+   width: 15px;
+ 
+}
+
+.counter{
+  top: 455px;
+  right:47%;
+}
+
+
+}
+
+
+@media screen and (max-width:425px){
 
   .WrapManege{
     width: 95%;

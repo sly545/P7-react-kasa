@@ -64,7 +64,7 @@ export default function Accomodation() {
             <div className={styles.contenerEquipeDescript}>
               <div className={styles.tailleDes}>
                 <Colapse
-                  title="description"
+                  title="Description"
                   content={accomodation.description}
                   hasHeight={true}
                 />

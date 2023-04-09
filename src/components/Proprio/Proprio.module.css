@@ -40,7 +40,7 @@
 .contenentimg{
     margin: 0%;
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:912px){
 .query{
     display: flex;
     width: 100%;
@@ -57,19 +57,4 @@
     margin-bottom: 0px;
 }
 
-}
-
-@media screen and (max-width:385px){
-
-   .starts{
-    width: auto;
-    padding-left: 0%;
-  }
-
-  .query{
-    justify-content: space-between;
-}
-
-
-
-}
+}    
