@@ -5,6 +5,7 @@ ul{
 .contener{
     background-color: #f1f1f1;
     margin: 25px;
+    border-radius: 10px 10px 0 0 ;
 
 }
 .TitleContener{
@@ -84,6 +85,12 @@ ul{
     .height400 {
         height: auto;
       }
+    
+      .TitleContener{
+        border-radius: 5px;
+     
+        
+     }
 
   }
 
