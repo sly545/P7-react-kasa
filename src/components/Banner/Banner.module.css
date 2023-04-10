@@ -65,7 +65,7 @@ filter: brightness(74%);
     
  }
 
- @media screen and (max-width:425px){
+ @media screen and (max-width:428px){
 
     .title{
         font-size: 30px;
