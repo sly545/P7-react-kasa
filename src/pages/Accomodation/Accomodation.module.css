@@ -104,8 +104,13 @@
     display: flex;
     flex-direction: row;
     width: 105%;
-}
 
+}
+.tentative{
+    display: flex;
+    flex-direction: row;
+ 
+}
 @media screen and (max-width:912px){
 
 

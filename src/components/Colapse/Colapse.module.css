@@ -39,7 +39,7 @@ ul{
 
   @keyframes expand {
     from { max-height: 0; }
-    to { max-height: 500px; }
+    to { max-height: 400px; }
   }
   .descript{
     font-family: Montserrat;
@@ -52,13 +52,12 @@ ul{
     animation: expand 1s ease-in-out;
     overflow: hidden;
     list-style-type: none;
-    background-color: #f1f1f1;
     padding-left: 15px;
     padding-bottom: 15px;
     padding-right: 15px;
 }
 
-.WrapAbout{
+.WrapAbout{ 
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
@@ -71,9 +70,7 @@ ul{
     background-color: #f1f1f1;
     border-radius: 10px 10px 0px 0px;
 }
-.height400 {
-    height: 235px;
-  }
+
   @media screen and (max-width:912px){
     .contener{
         margin-top: 15px;
@@ -82,10 +79,6 @@ ul{
         margin-bottom: 10px;
         
     }
-    .height400 {
-        height: auto;
-      }
-    
       .TitleContener{
         border-radius: 5px;
      

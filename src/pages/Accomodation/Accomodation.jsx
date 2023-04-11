@@ -66,7 +66,6 @@ export default function Accomodation() {
                 <Colapse
                   title="Description"
                   content={accomodation.description}
-                  hasHeight={true}
                 />
               </div>
               <div className={styles.tailleEqui}>
@@ -78,8 +77,7 @@ export default function Accomodation() {
                         <li key={index}>{equipment}</li>
                       ))}
                     </ul>
-                  }
-                  hasHeight={true}
+                  } 
                 />
               </div>
             </div>
