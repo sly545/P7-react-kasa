@@ -1,27 +1,55 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import PropTypes from 'prop-types';
 import styles from '../Carrousell/Carrousell.module.css'
 import fleshLeft from '../../assets/felshLeft.png'
-import fleshRight from '../../assets/flesheRight.png' 
+import fleshRight from '../../assets/flesheRight.png'
 
 function Carrousell(props) {
   const photos = props.accomodation.pictures;
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+  // État pour suivre l'index de la photo actuellement affichée
+  const [currentSlide, setCurrentSlide] = useState(0);
+  // Référence pour accéder au composant Slider
+  const sliderRef = useRef(null);
 
+
+  // Options de configuration pour le composant Slider
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 900,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    beforeChange: (current, next) => setCurrentSlide(next)
+    
+  };
+
+  // Fonction pour passer à la photo suivante en utilisant la méthode slickNext du composant Slider
   const handleNextPhoto = () => {
-    setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length);
+    sliderRef.current.slickNext();
+  };
+  //pour faire l'inversse
+  const handlePrevPhoto = () => {
+    sliderRef.current.slickPrev();
   };
 
-  const handlePrevPhoto = () => {
-    setCurrentPhotoIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length);
-  };
+  // Renvoie un élément `div` contenant les boutons de navigation personnalisés, le compteur et le composant Slider pour afficher les photos
 
   return (
     <div className={styles.WrapManege}>
       <img className={styles.buttonLeft} src={fleshLeft} onClick={handlePrevPhoto} alt="Précédent" />
-      <img className={styles.photoCarousel} src={photos[currentPhotoIndex]} alt="" />
+      <Slider ref={sliderRef} {...settings}>
+        {photos.map((photo) => (
+          <div key={photo}>
+            <img className={styles.photoCarousel} src={photo} alt="" />
+          </div>
+        ))}
+      </Slider>
       <div className={styles.counter}>
-        {currentPhotoIndex + 1} / {photos.length}
+        {currentSlide + 1} / {photos.length}
       </div>
       <img className={styles.buttonRight} src={fleshRight} onClick={handleNextPhoto} alt="Suivant" />
     </div>

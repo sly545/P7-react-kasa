@@ -21,17 +21,20 @@ export default function Accomodation() {
   }, []);
 
   const accomodation = accomodations.find(a => a.id === id);
-
+  
+  // Hook d'effet pour rediriger l'utilisateur vers la page "non trouvée" si l'hébergement demandé n'est pas trouvé
   useEffect(() => {
     if (!isLoading && !accomodation) {
       navigate('/notfound');
     }
   }, [isLoading, accomodation, navigate]);
-
-  if (isLoading || !accomodation) {
+  
+    // Si les données sont en cours de chargement ou si l'hébergement n'est pas trouvé, ne rien renvoyer
+    if (isLoading || !accomodation) {
     return null;
   }
-
+   
+  // Renvoie un élément `div` contenant un carrousel d'images et des informations sur l'hébergement
   return (
     <div>
       <div className={styles.Wrap}>

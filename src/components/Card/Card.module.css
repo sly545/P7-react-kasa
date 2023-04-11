@@ -14,12 +14,6 @@
     margin-bottom: 2%;
 }
 
-.Card_imgCover__Uc8ek{
-   width: 22px;
-}
-
-
-
 .contenerCard{
    border: 1px;
    position: relative;
@@ -84,7 +78,6 @@
    left: 47px;
    
 }
-
 }
 
 
@@ -108,7 +101,7 @@
    }
 
    .titleCover{
-      left: 20px;
+      left: 8px;  
    
  }
 
