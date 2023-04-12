@@ -49,7 +49,7 @@
 }
 
 /*  mediaquery tablette  */
-@media screen and (max-width:912px){
+@media screen and (max-width:768px){
    .wrap{
       background-color: #F6F6F6;
       display: flex;
@@ -79,8 +79,14 @@
    
 }
 }
+@media screen and (min-width: 769px) and (max-width: 940px) {
 
-
+   .imgCover{
+     width: 274px;
+     height:274px;
+   }
+   
+}
 
 /*  mediaquery smarte phone  */
 @media screen and (max-width:425px){

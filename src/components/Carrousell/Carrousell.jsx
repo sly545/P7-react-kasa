@@ -23,7 +23,7 @@ function Carrousell(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    beforeChange: (current, next) => setCurrentSlide(next)
+     beforeChange: (_, next) => setCurrentSlide(next)
     
   };
 

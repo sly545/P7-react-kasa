@@ -40,7 +40,7 @@
 .contenentimg{
     margin: 0%;
 }
-@media screen and (max-width:912px){
+@media screen and (max-width:768px){
 .query{
     display: flex;
     width: 100%;

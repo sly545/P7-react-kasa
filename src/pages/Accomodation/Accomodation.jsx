@@ -63,7 +63,7 @@ export default function Accomodation() {
               <Proprio accomodation={accomodation} />
             </div>
           </div>
-          <div className={styles.trop}>
+        
             <div className={styles.contenerEquipeDescript}>
               <div className={styles.tailleDes}>
                 <Colapse
@@ -84,7 +84,6 @@ export default function Accomodation() {
                 />
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

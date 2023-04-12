@@ -90,28 +90,22 @@
 .contenerEquipeDescript{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 106%;
 }
 .tailleDes{
-  width: 95%;
+  width: 100%;
 }
 .tailleEqui{
-    width: 95%;
+    width: 100%;
     
    
-}
-.trop{
-    display: flex;
-    flex-direction: row;
-    width: 104%;
-
 }
 .tentative{
     display: flex;
     flex-direction: row;
  
 }
-@media screen and (max-width:912px){
+@media screen and (max-width:768px){
 
 
      
@@ -122,7 +116,9 @@
     width: 95%;
     flex-direction: column;
   }
-
+  .contenerEquipeDescript{
+    width: 100%;
+}
 
 
     .title{

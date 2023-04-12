@@ -65,6 +65,17 @@ filter: brightness(74%);
     
  }
 
+ @media screen and (min-width: 769px) and (max-width: 940px) {
+    .ImgBanner{
+        width: 80%;
+        height: 223px;
+    }
+
+
+    
+ }
+
+ 
  @media screen and (max-width:428px){
 
     .title{

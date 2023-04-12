@@ -34,7 +34,7 @@
   right: 50%;
 }
 
-@media screen and (max-width:912px){
+@media screen and (max-width:768px){
 
   .WrapManege{
     width: 95%;

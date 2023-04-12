@@ -69,7 +69,7 @@ ul{
     border-radius: 10px 10px 0px 0px;
 }
 
-  @media screen and (max-width:912px){
+  @media screen and (max-width:768px){
     .contener{
         margin-top: 15px;
         width: 100%;
