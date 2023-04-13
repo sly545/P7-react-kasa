@@ -116,10 +116,6 @@
     width: 95%;
     flex-direction: column;
   }
-  .contenerEquipeDescript{
-    width: 100%;
-}
-
 
     .title{
         color: #ff6060;
@@ -169,6 +165,7 @@
     
     .contenerEquipeDescript{
         flex-direction: column;
+        width: 100%;
 
     
     }

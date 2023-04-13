@@ -1,15 +1,16 @@
 .wrapApropos{
-    width: 84%;
+    width: 75%;
     padding-bottom: 1%;
     padding-top: 4%;
-    margin-left: 8%;
+    margin-left: 12%;
 }
 .espacement{
     margin-bottom: 140px;
 }
-@media screen and (max-width:912px){
+
+@media screen and (max-width:768px){
     .wrapApropos{
-        width: 89%;
+        width: 93%;
         padding-bottom: 1%;
         padding-top: 4%;
         margin-left: 3%;

@@ -39,6 +39,7 @@ ul{
     from { max-height: 0; }
     to { max-height: 400px; }
   }
+
   .descript{
     font-family: Montserrat;
     font-size: 18px;
@@ -53,6 +54,7 @@ ul{
     padding-left: 15px;
     padding-bottom: 15px;
     padding-right: 15px;
+
 }
 
 .WrapAbout{ 
@@ -73,7 +75,7 @@ ul{
     .contener{
         margin-top: 15px;
         width: 100%;
-        margin-left: 9px;
+        margin-left: 0px;
         margin-bottom: 10px;
         
     }

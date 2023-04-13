@@ -16,7 +16,7 @@ export function Colapse ({ title, content, className }) {
     // Renvoie un élément `div` contenant un titre et du contenu (si `isOpen` est `true`)
     return(
         <div className={styles.contener}>
-            <div>
+            <div> 
                 <div className={styles.TitleContener}>
                     <h2 className={styles.descriptTitle} onClick={handleCickColapse}>
                         { title }
@@ -24,6 +24,7 @@ export function Colapse ({ title, content, className }) {
                     </h2>
                 </div>
                 {isOpen && <h3 className={`${styles.descript} ${className}`}> {content}</h3>}
+                
             </div>
         </div>
     );

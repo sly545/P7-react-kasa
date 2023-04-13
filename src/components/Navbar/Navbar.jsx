@@ -1,5 +1,5 @@
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";//retourne l'objet de l'emplacement courant.
+import { Link } from "react-router-dom";// Importer le composant Link pour créer des liens vers d'autres pages
 import styles from "../Navbar/Navbar.module.css";
 import logo from "../../images/logo.png";
 
@@ -7,7 +7,8 @@ export default function Navbar() {
   const location = useLocation();
 
   const activeStyle = {
-    textDecoration: "underline",
+    textDecoration: "underline", //J'ai utilisé la constante "activeStyle" pour ajouter un soulignement 
+                                 //au lien actif dans la navbar car je n'ai pas réussi à le faire directement en utilisant les modules CSS.
   };
 
   return (

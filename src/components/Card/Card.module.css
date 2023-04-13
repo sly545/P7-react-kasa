@@ -30,11 +30,17 @@
    mix-blend-mode: darken;
    filter: brightness(85%);
    margin-bottom: 30px;
+   transition: transform 0.2s;
+
+   
 }
 
 .imgCover:hover{
    box-shadow: 1px 1px 12px #ff6060;
    transition: 0.5s;
+   transform: scale(1.02);
+   
+
 }
 
 
