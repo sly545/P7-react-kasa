@@ -15,14 +15,14 @@ function Proprio(props) {
   
   // Boucle for pour générer les étoiles pleines en fonction de la valeur de rating
   for (let i = 0; i < rating; i++) {
-    // Ajout d'une étoile pleine au tableau stars
-    stars.push(<img src={EtoileFull} alt="étoile pleine" key={i} />);
+    // Ajout d'une étoile pleine au tableau stars  j'ai ajouter une classe pour une media query pour les plus petit smartphones. 
+    stars.push(<img className={styles.etoilePlein} src={EtoileFull} alt="étoile pleine" key={i} />);
   }
   
   // Boucle for pour générer les étoiles vides
   for (let i = rating; i < 5; i++) {
-    // Ajout d'une étoile vide au tableau stars
-    stars.push(<img src={EtoileEmpty} alt="étoile vide" key={i} />);
+    // Ajout d'une étoile vide au tableau stars j'ai ajouter une classe pour une media query pour les plus petit smartphones. 
+    stars.push(<img className={styles.etoileVide} src={EtoileEmpty} alt="étoile vide" key={i} />);
   }
 
   return (

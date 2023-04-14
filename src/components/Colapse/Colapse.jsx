@@ -24,7 +24,6 @@ export function Colapse ({ title, content, className }) {
                     </h2>
                 </div>
                 {isOpen && <h3 className={`${styles.descript} ${className}`}> {content}</h3>}
-                
             </div>
         </div>
     );
