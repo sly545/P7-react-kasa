@@ -48,14 +48,12 @@ filter: brightness(74%);
     }
 
     .title{
-       padding-right:13%;
        font-family: Montserrat;
        font-size: 43px;
        font-weight: 500;
        line-height: 37px;
        letter-spacing: 0em;
-       text-align: left;
-       display: block;
+        text-align: left;
 
     }
     

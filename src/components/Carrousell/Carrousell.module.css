@@ -1,7 +1,7 @@
 .WrapManege{
   width: 80%;
   margin-left: 0%;
-  padding-top: 25px;
+  padding-top: 12px;
 }
 .photoCarousel {
   height: 415px;
@@ -14,14 +14,14 @@
   outline: none;
 }
 .buttonLeft{
-    top: 295px;
+    top: 275px;
     position: absolute;
     left: 10%;
     z-index: 5;
 }
 
 .buttonRight{
-   top: 295px;
+   top: 275px;
    position: absolute;
    right: 10%;
    z-index: 5;
@@ -29,7 +29,7 @@
 .counter{
   color: white;
   position: absolute;
-  top: 504px;
+  top: 489px;
   color: white;
   right: 50%;
 }

@@ -40,7 +40,7 @@
     justify-content: center;
     margin-right: 10px;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
@@ -90,13 +90,16 @@
 .contenerEquipeDescript{
     display: flex;
     flex-direction: row;
-    width: 106%;
+    width: 100%;
 }
 .tailleDes{
   width: 100%;
+  margin-right: 20px;
+
 }
 .tailleEqui{
     width: 100%;
+    margin-left: 20px;
     
    
 }
@@ -170,7 +173,17 @@
     
     }
      
-    
+    .tailleDes{
+        width: 100%;
+        margin-right: 20px;
+      
+      }
+      .tailleEqui{
+          width: 100%;
+          margin-left: 0px;
+          
+         
+      }
 .propri{
     
     display: flex;

@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 158px;
+    width: 179px;
+    padding-bottom: 6px;
    
 
 }
@@ -11,6 +12,7 @@
    color: #ff6060;
    margin: 0%;
    padding-left: 25px;
+   padding-right: 10px;
    font-family: Montserrat;
    font-size: 18px;
    font-weight: 500;
@@ -27,10 +29,20 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    margin-bottom: 11px;
+    margin-bottom: 22px;
    
     
 }
+.etoilePlein{
+    color:#ff6060;
+    font-size: 24px;
+    
+}
+.etoileVide{
+    color: #e3e3e3;
+    font-size: 24px;
+}
+
 .starts{
  
     margin: 0%;
@@ -49,6 +61,23 @@
     justify-content: space-between;
 }
 
+.etoilePlein{
+
+    font-size: 20px;
+    
+}
+.etoileVide{
+   
+    font-size: 20px;
+}
+.nom{
+    padding-bottom: 0px;
+   
+    width: 187px;
+   
+
+}
+
 .starts{
     padding-left: 0%;
     margin: 0%;
@@ -56,4 +85,18 @@
 .etoille{
     margin-bottom: 0px;
 }
+}
+
+/* media query toute petit portable   */
+@media screen and (max-width:315px){
+    .etoilePlein{
+
+        font-size: 15px;
+        
+    }
+    .etoileVide{
+       
+        font-size: 15px;
+    }
+
 }    
