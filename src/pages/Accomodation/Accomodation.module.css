@@ -40,7 +40,7 @@
     justify-content: center;
     margin-right: 10px;
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
@@ -147,12 +147,12 @@
         
     }
     li{
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
     .listCartier{
         width:115px;
         border-radius: 5px;
-        font-size: 14px;
+        font-size: 11px;
         padding-left: 2px;
         padding-right: 2px;
 
@@ -169,18 +169,18 @@
     .contenerEquipeDescript{
         flex-direction: column;
         width: 100%;
-
-    
     }
      
     .tailleDes{
         width: 100%;
         margin-right: 20px;
+        margin-bottom: 20px;
       
       }
       .tailleEqui{
           width: 100%;
           margin-left: 0px;
+          margin-bottom: 65px;
           
          
       }

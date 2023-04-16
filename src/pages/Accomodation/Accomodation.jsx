@@ -80,7 +80,9 @@ export default function Accomodation() {
                         <li key={index}>{equipment}</li>
                       ))}
                     </ul>
-                  } 
+               
+                  }
+                  className="paddingBottom1"
                 />
               </div>
             </div>

@@ -52,10 +52,11 @@ ul{
     overflow: hidden;
     list-style-type: none;
     padding-left: 15px;
-    padding-bottom: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
 
 }
+
 
 .WrapAbout{ 
     padding-left: 10%;
