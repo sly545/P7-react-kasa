@@ -26,6 +26,7 @@
 .lieu{
     color: #ff6060;
     margin: 0;
+    font-size: 17px;
 }
 .listCartier{
     padding-right: 20px;
@@ -50,7 +51,7 @@
 
 
 .title{
-    color: #ff6060;
+   color: #ff6060;
    margin-top: 27px;
    margin-bottom: 4px;
    font-family: Montserrat;
@@ -92,17 +93,19 @@
     flex-direction: row;
     width: 100%;
 }
-.tailleDes{
+.tailleDes,
+.tailleEqui {
   width: 100%;
-  margin-right: 20px;
+}
 
+.tailleDes {
+  margin-right: 20px;
 }
-.tailleEqui{
-    width: 100%;
-    margin-left: 20px;
-    
-   
+
+.tailleEqui {
+  margin-left: 20px;
 }
+
 .tentative{
     display: flex;
     flex-direction: row;

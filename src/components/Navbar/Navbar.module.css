@@ -99,10 +99,18 @@
    }
    .home{
     padding-right:12px;
+    font-size: 15px;
    }
    .apropo{
     margin-left: 0%;
+    font-size: 15px;
    }
 
 
+.wrapNav{
+
+        padding-right: 5%;
+        padding-left: 5%;
+     
+    }
  }

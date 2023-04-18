@@ -1,17 +1,17 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; // Import de PropTypes pour définir les types attendus des props
 import ImgBanner from '../../images/Chez-vous-partout.png';
 import styles from '../Banner/Banner.module.css';
 
-// Les prop `showTitle,et imgSrc` permet de contrôler l'affichage du titre et l'afichage de la photo, ce qui  va me servir pour utiliser le composant `Banner` sur différentes pages avec ou sans titre
-export default function Banner({ imgSrc, showTitle = true }) {
+// Définition du composant fonctionnel React "Banner" 
+export default function Banner({ imgSrc, showTitle = true, imgHeight }) {
   return (
-    // Renvoie un élément `div` contenant une image et un titre (si `showTitle` est `true`)
     <div className={styles.wrap}>
       <div className={styles.contenerText}>
         <img
           className={styles.ImgBanner}
           src={imgSrc || ImgBanner}
           alt="Vue d'une crique bordée de sapins et d'une falaise escarpée en arrière-plan"
+          style={{ height: imgHeight }}
         />
         {showTitle && <h1 className={styles.title}>
     Chez vous,
@@ -23,7 +23,9 @@ export default function Banner({ imgSrc, showTitle = true }) {
   );
 }
 
+// Définition des types attendus pour chaque prop
 Banner.propTypes = {
   imgSrc: PropTypes.string,
   showTitle: PropTypes.bool,
+  imgHeight: PropTypes.string,
 };

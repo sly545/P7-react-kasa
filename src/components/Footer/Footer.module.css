@@ -23,3 +23,8 @@
     color: white;
     
 }
+@media screen and (max-width:768px){
+    .copyRight{
+        font-size: 12px;
+    }
+}

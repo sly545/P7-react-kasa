@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-import FleshBottom from '../../assets/fleshBottom.png';
-import FleshTop from '../../assets/fleshTop.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import styles from '../Colapse/Colapse.module.css';
 
 export function Colapse({ title, content, className }) {
@@ -12,7 +12,7 @@ export function Colapse({ title, content, className }) {
 
   if (window.matchMedia('(max-width: 768px)').matches) {
     // Appliquez la valeur de padding différente pour les écrans avec une largeur maximale de 768 pixels
-    paddingBottom = location.pathname === '/APropos' ? '50px' : '30px';
+    paddingBottom = location.pathname === '/APropos' ? '50px' : '10px';
   }
 
   const handleCickColapse = () => {
@@ -25,11 +25,7 @@ export function Colapse({ title, content, className }) {
         <div className={styles.TitleContener}>
           <h2 className={styles.descriptTitle} onClick={handleCickColapse}>
             {title}
-            <img
-              className={styles.flesh}
-              src={isOpen ? FleshTop : FleshBottom}
-              alt="toggle colapse"
-            />
+            <FontAwesomeIcon className={styles.flesh} icon={isOpen ? faChevronUp : faChevronDown} />
           </h2>
         </div>
         {isOpen && (
