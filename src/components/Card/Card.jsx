@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import axios from 'axios';
 import { Link } from 'react-router-dom'; 
 import styles from "./Card.module.css";
 
@@ -11,15 +10,15 @@ function Card() {
   // Hook d'effet pour récupérer les données d'appartements à partir d'un fichier JSON local
   useEffect(() => {
     async function fetchData() {
-      const result = await axios(
-        "/data.json"
-      );
-      setApartments(result.data);
+      const response = await fetch("/data.json");
+      const data = await response.json();
+      setApartments(data);
     }
 
     fetchData();
   }, []);
-// Renvoie un élément `div` contenant une liste de liens vers les pages d'appartements
+
+  // Renvoie un élément `div` contenant une liste de liens vers les pages d'appartements
   return (
     <div className={styles.wrap}>
       {apartments.map(

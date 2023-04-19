@@ -82,6 +82,9 @@ filter: brightness(74%);
 
     .title{
         font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 5px;
      }
  }
  

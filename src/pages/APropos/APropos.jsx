@@ -10,7 +10,7 @@ export default function Apropos() {
   return (
     <div className={styles.test}>
      
-     <Banner imgSrc={ImageApropo} showTitle={false} imgHeight="220px" />
+     <Banner imgSrc={ImageApropo} showTitle={false} imgHeight="223px" />
      <div className={styles.wrapApropos}> 
      <Colapse 
      title="Fiabilité"

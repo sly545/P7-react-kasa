@@ -19,7 +19,7 @@
 .buttonLeft{
     top: 275px;
     position: absolute;
-    left: 10%;
+    left: 11.3%;
     z-index: 5;
 }
 .buttonLeft:hover{
@@ -31,13 +31,13 @@
 .buttonRight{
    top: 275px;
    position: absolute;
-   right: 10%;
+   right: 11.3%;
    z-index: 5;
 }
 .counter{
   color: white;
   position: absolute;
-  top: 489px;
+  top: 470px;
   right: 50%;
   
 }
@@ -59,13 +59,13 @@
   .buttonLeft{
     top: 283px;
     position: absolute;
-    left: 3%;
+    left: 5%;
     width: 15px;
 }
   .buttonRight{
    top: 283px;
    position: absolute;
-   right: 3%;
+   right: 5%;
    width: 15px;
  
 }
@@ -96,13 +96,13 @@
   .buttonLeft{
     top: 224px;
     position: absolute;
-    left: 3%;
+    left: 5%;
     width: 15px;
 }
   .buttonRight{
    top: 224px;
    position: absolute;
-   right: 3%;
+   right: 5%;
    width: 15px;
  
 }
