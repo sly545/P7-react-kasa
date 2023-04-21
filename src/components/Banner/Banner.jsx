@@ -23,7 +23,7 @@ export default function Banner({ imgSrc, showTitle = true, imgHeight }) {
   );
 }
 
-// Définition des types attendus pour chaque prop
+// Définition des types attendus pour chaques props
 Banner.propTypes = {
   imgSrc: PropTypes.string,
   showTitle: PropTypes.bool,

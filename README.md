@@ -1,5 +1,5 @@
 Kasa Project
-Kasa Project est un site web de location de logement. Ce projet a été réalisé avec React et React Router.
+Kasa Project est un site web de location de logements. Ce projet a été réalisé avec React et React Router.
 
 Installation:
 Clonez le repo : git clone https://github.com/sly545/P7-react-kasa.git
@@ -12,7 +12,7 @@ Affichage des détails d'un logement
 Technologies utilisées
 -React
 -React Router
--Axios
+
 
 
 
@@ -26,5 +26,5 @@ assets/ : dossier contenant les images et les fichiers de style
 App.js : fichier principal de l'application
 index.js : fichier d'entrée de l'application
 public/ : dossier contenant les fichiers publics de l'application
-Auteur
+Auteur:
 Ce projet a été réalisé par [Ferrandes Sylvain].

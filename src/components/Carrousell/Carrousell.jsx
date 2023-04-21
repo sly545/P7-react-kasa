@@ -18,12 +18,26 @@ function Carrousell(props) {
 
   return (
     <div className={styles.WrapManege}>
-      <img className={styles.buttonLeft} src={fleshLeft} onClick={handlePrevPhoto} alt="Précédent" />
+      {photos.length > 1 && (
+        <>
+          <img
+            className={styles.buttonLeft}
+            src={fleshLeft}
+            onClick={handlePrevPhoto}
+            alt="Précédent"
+          />
+          <img
+            className={styles.buttonRight}
+            src={fleshRight}
+            onClick={handleNextPhoto}
+            alt="Suivant"
+          />
+        </>
+      )}
       <img className={styles.photoCarousel} src={photos[currentPhotoIndex]} alt="" />
       <div className={styles.counter}>
         {currentPhotoIndex + 1} / {photos.length}
       </div>
-      <img className={styles.buttonRight} src={fleshRight} onClick={handleNextPhoto} alt="Suivant" />
     </div>
   );
 }

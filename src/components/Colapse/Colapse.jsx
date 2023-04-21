@@ -8,12 +8,18 @@ import styles from '../Colapse/Colapse.module.css';
 export function Colapse({ title, content, className }) {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  let paddingBottom = '15px';
+  let paddingBottom = '';
+
+  //condition  pour gérer les diferrents padding du selon la page ou ils s'affiche.
+  if (window.matchMedia) {
+    paddingBottom = location.pathname === '/APropos' ? '5px' : '20px';
+  }
 
   if (window.matchMedia('(max-width: 768px)').matches) {
     // Appliquez la valeur de padding différente pour les écrans avec une largeur maximale de 768 pixels
-    paddingBottom = location.pathname === '/APropos' ? '50px' : '10px';
+    paddingBottom = location.pathname === '/APropos' ? '50px' : '3px';
   }
+  
 
   const handleCickColapse = () => {
     setIsOpen(!isOpen);
