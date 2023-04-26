@@ -18,6 +18,7 @@ function Carrousell(props) {
 
   return (
     <div className={styles.WrapManege}>
+      {/* Affichage des boutons de navigation uniquement si le nombre de photos est supérieur à 1 */}
       {photos.length > 1 && (
         <>
           <img

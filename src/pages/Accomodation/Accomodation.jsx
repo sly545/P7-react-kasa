@@ -13,7 +13,7 @@ export default function Accomodation() {
 
   useEffect(() => {
     fetch('http://localhost:3000/data.json')
-      .then(response => response.json())
+      .then(response => response.json())  
       .then(data => {
         setAccomodations(data);
         setIsLoading(false);
